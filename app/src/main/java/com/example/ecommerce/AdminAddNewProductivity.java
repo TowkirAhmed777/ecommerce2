@@ -62,6 +62,7 @@ private StorageReference ProductImageRef;
         InputProductDescription = (EditText) findViewById(R.id.product_description);
         InputProductPrice = (EditText) findViewById(R.id.product_price);
         loadingBar = new ProgressDialog(this);
+        // test code
 
 
         InputProductImage.setOnClickListener(new View.OnClickListener() {
