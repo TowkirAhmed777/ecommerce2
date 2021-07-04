@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ecommerce.Admin.AdminCategoryActivity;
 import com.example.ecommerce.Model.Users;
 import com.example.ecommerce.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button LoginButton;
     private ProgressDialog loadingBar;
 
-    private TextView AdminLink, NotAdminLink;
+    private TextView AdminLink, NotAdminLink,ForgetPasswordLink;
 
     private String parentDbName = "Users";
 
@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         AdminLink =(TextView)findViewById(R.id.admin_panel_link);
         NotAdminLink =(TextView)findViewById(R.id.not_admin_panel_link);
 
-
+ForgetPasswordLink = findViewById(R.id.forget_password_link);
 
         loadingBar = new ProgressDialog(this);
 
@@ -71,6 +71,16 @@ public class LoginActivity extends AppCompatActivity {
                 LoginUser();
             }
         });
+
+ForgetPasswordLink.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+        intent.putExtra("check", "login");
+        startActivity(intent);
+    }
+});
+
 
 
         AdminLink.setOnClickListener(new View.OnClickListener() {

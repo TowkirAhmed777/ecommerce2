@@ -15,10 +15,11 @@
         android:theme="@style/Theme.ECommerce"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme">
-        <activity android:name=".AdminMaintainProductsActivity"></activity>
+        <activity android:name=".ResetPasswordActivity"></activity>
+        <activity android:name=".Admin.AdminMaintainProductsActivity" />
         <activity android:name=".SearchProductsActivity" />
-        <activity android:name=".AdminUserProductActivity" />
-        <activity android:name=".AdminNewOrderActivity" />
+        <activity android:name=".Admin.AdminUserProductActivity" />
+        <activity android:name=".Admin.AdminNewOrderActivity" />
         <activity android:name=".ConfirmFinalOrderActivity" />
         <activity android:name=".CartActivity" />
         <activity android:name=".ProductDetailsActivity" />
@@ -27,8 +28,8 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.ECommerce.NoActionBar" />
-        <activity android:name=".AdminCategoryActivity" />
-        <activity android:name=".AdminAddNewProductivity" />
+        <activity android:name=".Admin.AdminCategoryActivity" />
+        <activity android:name=".Admin.AdminAddNewProductivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">

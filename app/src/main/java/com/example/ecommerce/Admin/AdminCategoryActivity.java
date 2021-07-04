@@ -1,4 +1,4 @@
-package com.example.ecommerce;
+package com.example.ecommerce.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.ecommerce.HomeActivity;
+import com.example.ecommerce.MainActivity;
+import com.example.ecommerce.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {
 
@@ -90,7 +94,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         tShirts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminCategoryActivity.this,AdminAddNewProductivity.class);
+                Intent intent = new Intent(AdminCategoryActivity.this, AdminAddNewProductivity.class);
                 intent.putExtra("category","tShirt");
                 startActivity(intent);
             }

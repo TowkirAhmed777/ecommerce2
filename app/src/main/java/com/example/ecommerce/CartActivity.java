@@ -53,7 +53,7 @@ public class CartActivity extends AppCompatActivity {
 
         NextProcessBtn = (Button) findViewById(R.id.next_process_btn);
         txtMsg1 = (TextView) findViewById(R.id.msg1);
-        txtTotalAmount = (TextView) findViewById(R.id.total_price);
+        txtTotalAmount = (TextView) findViewById(R.id.page_title);
 
 
         NextProcessBtn.setOnClickListener(new View.OnClickListener() {
