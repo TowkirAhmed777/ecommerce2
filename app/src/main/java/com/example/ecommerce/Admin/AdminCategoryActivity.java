@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.ecommerce.HomeActivity;
-import com.example.ecommerce.MainActivity;
+import com.example.ecommerce.Buyers.HomeActivity;
+import com.example.ecommerce.Buyers.MainActivity;
 import com.example.ecommerce.R;
 
 public class AdminCategoryActivity extends AppCompatActivity {

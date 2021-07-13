@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.ecommerce.Model.Cart;
 import com.example.ecommerce.R;
-import com.example.ecommerce.ViewHolder.CartViewHolder;
+import com.example.ecommerce.Buyers.CartViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
