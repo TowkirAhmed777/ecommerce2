@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
 
+import com.example.ecommerce.Admin.SellerProductCategoryActivity;
 import com.example.ecommerce.Buyers.MainActivity;
 import com.example.ecommerce.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,18 +31,23 @@ public class SellerHomeActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.navigation_home:
                         Toast.makeText(SellerHomeActivity.this, "Home", Toast.LENGTH_SHORT).show();
+
                         return;
                     case R.id.navigation_add:
-                        Toast.makeText(SellerHomeActivity.this, "add", Toast.LENGTH_SHORT).show();
+                        Intent intentCate = new Intent(SellerHomeActivity.this, SellerProductCategoryActivity.class);
+
+                        startActivity(intentCate);
                         return;
+
+
                     case R.id.navigation_logout:
                         final FirebaseAuth mAuth;
                         mAuth = FirebaseAuth.getInstance();
                         mAuth.signOut();
 
-                        Intent intent = new Intent(SellerHomeActivity.this, MainActivity.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(intent);
+                        Intent intentMain = new Intent(SellerHomeActivity.this, MainActivity.class);
+                        intentMain.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(intentMain);
                         finish();
 
                         return;

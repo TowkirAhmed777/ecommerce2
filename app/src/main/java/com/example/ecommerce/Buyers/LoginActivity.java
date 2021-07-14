@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ecommerce.Admin.AdminCategoryActivity;
+import com.example.ecommerce.Admin.SellerProductCategoryActivity;
 import com.example.ecommerce.Model.Users;
 import com.example.ecommerce.Prevalent.Prevalent;
 import com.example.ecommerce.R;
@@ -168,7 +168,7 @@ ForgetPasswordLink.setOnClickListener(new View.OnClickListener() {
                                Toast.makeText(LoginActivity.this," Welcome Admin, you are logged in Successfully...",Toast.LENGTH_SHORT).show();
                                loadingBar.dismiss();
 
-                               Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
+                               Intent intent = new Intent(LoginActivity.this, SellerProductCategoryActivity.class);
                                 Prevalent.currentOnlineUser =usersData;
                                startActivity(intent);
                             }
