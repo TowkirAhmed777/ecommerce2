@@ -1,8 +1,5 @@
  package com.example.ecommerce.Buyers;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +12,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ecommerce.Admin.SellerProductCategoryActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.ecommerce.Admin.AdminHomeActivity;
 import com.example.ecommerce.Model.Users;
 import com.example.ecommerce.Prevalent.Prevalent;
 import com.example.ecommerce.R;
@@ -168,7 +168,7 @@ ForgetPasswordLink.setOnClickListener(new View.OnClickListener() {
                                Toast.makeText(LoginActivity.this," Welcome Admin, you are logged in Successfully...",Toast.LENGTH_SHORT).show();
                                loadingBar.dismiss();
 
-                               Intent intent = new Intent(LoginActivity.this, SellerProductCategoryActivity.class);
+                               Intent intent = new Intent(LoginActivity.this, AdminHomeActivity.class);
                                 Prevalent.currentOnlineUser =usersData;
                                startActivity(intent);
                             }

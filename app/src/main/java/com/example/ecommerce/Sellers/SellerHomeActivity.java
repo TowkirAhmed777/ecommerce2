@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
 
-import com.example.ecommerce.Admin.SellerProductCategoryActivity;
 import com.example.ecommerce.Buyers.MainActivity;
 import com.example.ecommerce.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
