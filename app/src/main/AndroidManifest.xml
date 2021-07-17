@@ -15,7 +15,8 @@
         android:theme="@style/Theme.ECommerce"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme">
-        <activity android:name=".Admin.AdminCheckNewProductsActivity"></activity>
+        <activity android:name=".seller_item_view"></activity>
+        <activity android:name=".Admin.AdminCheckNewProductsActivity" />
         <activity android:name=".Admin.AdminHomeActivity" />
         <activity
             android:name=".Sellers.SellerHomeActivity"
